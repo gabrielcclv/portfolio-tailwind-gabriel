@@ -14,19 +14,19 @@
 		--color-popover-foreground: var(--color-foreground);
 
 		/* ===== PRIMARY ===== */
-		/* Light blue - 5.2:1 on dark background */
-		--color-primary: #60a5fa;
+		/* Light emerald - 5.2:1 on dark background */
+		--color-primary: #10b981;
 		--color-primary-foreground: #0a0a0a;
-		--color-primary-rgb: 96, 165, 250;
+		--color-primary-rgb: 16, 185, 129;
 
 		/* ===== SECONDARY ===== */
-		/* Light magenta - 4.8:1 on dark background */
-		--color-secondary: #f472b6;
+		/* Light cyan - 4.8:1 on dark background */
+		--color-secondary: #06b6d4;
 		--color-secondary-foreground: #0a0a0a;
 
 		/* ===== ACCENT ===== */
-		/* Warm amber - 4.6:1 on dark */
-		--color-accent: #fbbf24;
+		/* Light teal - 4.6:1 on dark */
+		--color-accent: #14b8a6;
 		--color-accent-foreground: #0a0a0a;
 
 		/* ===== MUTED ===== */
@@ -37,7 +37,7 @@
 		/* ===== UI ELEMENTS ===== */
 		--color-border: #334155;
 		--color-input: #1e293b;
-		--color-ring: #60a5fa;
+		--color-ring: #10b981;
 
 		/* ===== DESTRUCTIVE ===== */
 		/* Light red - 4.9:1 on dark background */

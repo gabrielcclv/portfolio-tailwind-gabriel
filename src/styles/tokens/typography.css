@@ -41,4 +41,11 @@
 		--letter-spacing-6xl: -0.025em;
 		--letter-spacing-7xl: -0.03em;
 	}
+	h1 { 
+		font-size: var(--text-3xl);
+		font-weight: bold;
+	}
+	p { 
+		font-size: var(--text-base); 
+	}
 }

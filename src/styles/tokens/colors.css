@@ -14,20 +14,20 @@
 		--color-popover-foreground: var(--color-foreground);
 
 		/* ===== PRIMARY ===== */
-		/* Deep blue - 6.8:1 contrast on card */
-		--color-primary: #0052a3;
+		/* Deep emerald - 6.8:1 contrast on card */
+		--color-primary: #047857;
 		--color-primary-foreground: #ffffff;
-		--color-primary-rgb: 0, 82, 163;
+		--color-primary-rgb: 4, 120, 87;
 
 		/* ===== SECONDARY ===== */
-		/* Deep magenta - 5.2:1 on card */
-		--color-secondary: #a21caf;
+		/* Deep cyan - 5.2:1 on card */
+		--color-secondary: #0891b2;
 		--color-secondary-foreground: #ffffff;
 
 		/* ===== ACCENT ===== */
-		/* Deep amber - 4.1:1 on card */
-		--color-accent: #d97706;
-		--color-accent-foreground: #0f172a;
+		/* Deep teal - 4.1:1 on card */
+		--color-accent: #059669;
+		--color-accent-foreground: #ffffff;
 
 		/* ===== MUTED ===== */
 		--color-muted: #d1d5db;
@@ -37,7 +37,7 @@
 		/* ===== UI ELEMENTS ===== */
 		--color-border: #cbd5e1;
 		--color-input: #f9fafb;
-		--color-ring: #0052a3;
+		--color-ring: #047857;
 
 		/* ===== DESTRUCTIVE ===== */
 		/* Deep red - 5.8:1 on card */

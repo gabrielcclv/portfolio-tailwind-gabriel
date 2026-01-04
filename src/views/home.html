@@ -3,34 +3,33 @@
 		<!-- Hero Section with Parallax -->
 		<section
 			id="hero"
-			class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
+			class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-emerald-900 to-slate-900"
 			style="z-index: 1">
 			<!-- Parallax background elements -->
 			<div class="absolute inset-0 overflow-hidden" data-parallax="0.3" style="z-index: 0">
-				<div class="absolute top-20 left-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"></div>
-				<div class="absolute bottom-20 right-20 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"></div>
+				<div class="absolute top-20 left-20 w-72 h-72 bg-emerald-500/20 rounded-full blur-3xl"></div>
+				<div class="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"></div>
 			</div>
 
 			<div class="relative text-center px-4 max-w-5xl mx-auto" style="z-index: 1">
 				<h1 class="text-5xl md:text-7xl font-bold mb-6 text-white" data-animate="fade-up">
-					<span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-						Welcome to Excellence
+					<span class="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+						Creative Developer
 					</span>
 				</h1>
 				<p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto" data-animate="fade-up">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua.
+					Construyo experiencias web modernas, responsivas y accesibles con tecnologías actuales. Diseño y desarrollo frontend que convierte ideas en realidad.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center" data-animate="fade-up">
 					<a
-						href="#features"
-						class="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-all hover:-translate-y-1 hover:shadow-xl">
-						Explore Features
+						href="#/projects"
+						class="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-all hover:-translate-y-1 hover:shadow-xl">
+						Ver Mis Proyectos
 					</a>
 					<a
-						href="#gallery"
+						href="#/contact"
 						class="px-8 py-4 border-2 border-white/30 hover:border-white/60 text-white font-semibold rounded-lg transition-all hover:-translate-y-1">
-						View Gallery
+						Ponerse en Contacto
 					</a>
 				</div>
 			</div>
@@ -45,40 +44,53 @@
 			</div>
 		</section>
 
+<section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-cyan-50 dark:from-slate-900 dark:to-slate-800">
+	<div class="glass-card p-8 md:p-12 rounded-3xl max-w-2xl text-center reveal-text">
+		<h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-600 to-cyan-600 dark:from-emerald-400 dark:to-cyan-400 bg-clip-text text-transparent mb-4">
+		Hola, soy <span class="underline decoration-emerald-500 dark:decoration-emerald-400">Desarrollador</span>
+		</h1>
+		<p class="text-slate-700 dark:text-slate-300 mb-8 text-lg">
+		Especialista en React, JavaScript y desarrollo frontend moderno. Creo interfaces intuitivas que generan impacto y resultados medibles.
+		</p>
+		<div class="flex gap-4 justify-center">
+		<a href="#/projects" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full transition-all hover:scale-105 font-semibold">
+			Ver Proyectos
+		</a>
+		<a href="#/contact" class="border-2 border-emerald-600 text-emerald-600 dark:border-emerald-400 dark:text-emerald-400 px-6 py-3 rounded-full hover:bg-emerald-50 dark:hover:bg-emerald-950 transition-all font-semibold">
+			Contacto
+		</a>
+			</div>
+		</div>
+		</section>
+
 		<!-- Features Section -->
 		<section id="features" class="py-20 lg:py-32 bg-white dark:bg-gray-900">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
 					<h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white" data-animate="fade-up">
-						Amazing Features
-					</h2>
-					<p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto" data-animate="fade-up">
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</p>
-				</div>
+					Mis Habilidades Principales
+				</h2>
+				<p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto" data-animate="fade-up">
+					Desarrollo completo de aplicaciones web con las mejores prácticas y tecnologías modernas del mercado.
 
 				<div class="grid md:grid-cols-3 gap-8">
 					<!-- Feature 1 -->
 					<div
 						class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
 						data-animate="fade-up">
-						<div class="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-							</svg>
-						</div>
-						<h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Lightning Fast</h3>
-						<p class="text-gray-600 dark:text-gray-400">
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						</p>
+					<div class="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center mb-6">
+						<svg class="w-8 h-8 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+						</svg>
 					</div>
-
-					<!-- Feature 2 -->
+					<h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Alto Rendimiento</h3>
+					<p class="text-gray-600 dark:text-gray-400">
+						Optimización de código, carga rápida y excelente experiencia de usuario. Métricas de rendimiento web optimizadas.
 					<div
 						class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
 						data-animate="fade-up">
-						<div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<div class="w-16 h-16 bg-cyan-100 dark:bg-cyan-900/30 rounded-xl flex items-center justify-center mb-6">
+						<svg class="w-8 h-8 text-cyan-600 dark:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path
 									stroke-linecap="round"
 									stroke-linejoin="round"
@@ -86,9 +98,9 @@
 									d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
 							</svg>
 						</div>
-						<h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Mobile First</h3>
+						<h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Responsive Design</h3>
 						<p class="text-gray-600 dark:text-gray-400">
-							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Diseño completamente adaptable. Desde móviles hasta pantallas de escritorio, perfecta visualización en cualquier dispositivo.
 						</p>
 					</div>
 
@@ -96,18 +108,18 @@
 					<div
 						class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
 						data-animate="fade-up">
-						<div class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-							</svg>
-						</div>
-						<h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Secure & Safe</h3>
-						<p class="text-gray-600 dark:text-gray-400">
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+					<div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-xl flex items-center justify-center mb-6">
+						<svg class="w-8 h-8 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+						</svg>
+					</div>
+					<h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">SEO Optimizado</h3>
+					<p class="text-gray-600 dark:text-gray-400">
+						Código semántico y mejores prácticas SEO implementadas. Visibilidad en buscadores garantizada.
 						</p>
 					</div>
 				</div>
@@ -119,12 +131,11 @@
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
 					<h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white" data-animate="fade-up">
-						Visual Showcase
-					</h2>
-					<p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto" data-animate="fade-up">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-					</p>
-				</div>
+					Proyectos Destacados
+				</h2>
+				<p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto" data-animate="fade-up">
+					Trabajo que he realizado para empresas y clientes de diferentes industrias. Cada proyecto es una oportunidad para crear valor.
+				</p>
 
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 					<!-- Gallery Item 1 -->
@@ -140,11 +151,11 @@
 						</div>
 						<div class="p-6">
 							<h3
-								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-								Stunning Landscape
+								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+								E-commerce Avanzado
 							</h3>
 							<p class="text-gray-600 dark:text-gray-400 text-sm">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+								Plataforma de compra con React, carrito dinámico y sistema de pagos integrado. +5000 usuarios mensuales.
 							</p>
 						</div>
 					</article>
@@ -162,11 +173,11 @@
 						</div>
 						<div class="p-6">
 							<h3
-								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-								Urban Architecture
+								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+								Dashboard Analytics
 							</h3>
 							<p class="text-gray-600 dark:text-gray-400 text-sm">
-								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+								Panel de control con gráficos interactivos. Datos en tiempo real con Chart.js y visualización optimizada.
 							</p>
 						</div>
 					</article>
@@ -184,11 +195,11 @@
 						</div>
 						<div class="p-6">
 							<h3
-								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-								Nature's Beauty
+								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+								Sistema de Citas Médicas
 							</h3>
 							<p class="text-gray-600 dark:text-gray-400 text-sm">
-								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+								Aplicación completa con base de datos, calendario interactivo y notificaciones automáticas.
 							</p>
 						</div>
 					</article>
@@ -206,11 +217,11 @@
 						</div>
 						<div class="p-6">
 							<h3
-								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-								Modern Design
+								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+								Blog con CMS Personalizado
 							</h3>
 							<p class="text-gray-600 dark:text-gray-400 text-sm">
-								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+								Plataforma de contenido con editor visual, SEO integrado y gestión de usuarios avanzada.
 							</p>
 						</div>
 					</article>
@@ -228,11 +239,11 @@
 						</div>
 						<div class="p-6">
 							<h3
-								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-								Creative Artwork
+								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+								App Social Network
 							</h3>
 							<p class="text-gray-600 dark:text-gray-400 text-sm">
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+								Red social con mensajería en tiempo real, feed dinámico y validación de usuarios.
 							</p>
 						</div>
 					</article>
@@ -250,11 +261,11 @@
 						</div>
 						<div class="p-6">
 							<h3
-								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-								Abstract Concepts
+								class="text-lg font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+								Portal de Educación Online
 							</h3>
 							<p class="text-gray-600 dark:text-gray-400 text-sm">
-								Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
+								Plataforma educativa con cursos, evaluaciones y certificados. Sistema de progreso estudiantil integrado.
 							</p>
 						</div>
 					</article>
@@ -263,24 +274,24 @@
 		</section>
 
 		<!-- Stats Section -->
-		<section id="stats" class="py-20 lg:py-32 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+		<section id="stats" class="py-20 lg:py-32 bg-gradient-to-r from-emerald-600 to-cyan-600 text-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="grid md:grid-cols-4 gap-8 text-center">
 					<div data-animate="fade-up">
-						<div class="text-5xl md:text-6xl font-bold mb-4">10K+</div>
-						<div class="text-xl text-purple-100">Happy Customers</div>
+						<div class="text-5xl md:text-6xl font-bold mb-4">25+</div>
+						<div class="text-xl text-emerald-100">Clientes Satisfechos</div>
 					</div>
 					<div data-animate="fade-up">
-						<div class="text-5xl md:text-6xl font-bold mb-4">500+</div>
-						<div class="text-xl text-purple-100">Projects Completed</div>
+						<div class="text-5xl md:text-6xl font-bold mb-4">40+</div>
+						<div class="text-xl text-emerald-100">Proyectos Completados</div>
 					</div>
 					<div data-animate="fade-up">
-						<div class="text-5xl md:text-6xl font-bold mb-4">50+</div>
-						<div class="text-xl text-purple-100">Team Members</div>
+						<div class="text-5xl md:text-6xl font-bold mb-4">3</div>
+						<div class="text-xl text-emerald-100">Años de Experiencia</div>
 					</div>
 					<div data-animate="fade-up">
-						<div class="text-5xl md:text-6xl font-bold mb-4">99%</div>
-						<div class="text-xl text-purple-100">Satisfaction Rate</div>
+						<div class="text-5xl md:text-6xl font-bold mb-4">98%</div>
+						<div class="text-xl text-emerald-100">Tasa de Satisfacción</div>
 					</div>
 				</div>
 			</div>
@@ -291,12 +302,10 @@
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
 					<h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white" data-animate="fade-up">
-						What People Say
-					</h2>
-					<p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto" data-animate="fade-up">
-						Read testimonials from our satisfied clients and partners.
-					</p>
-				</div>
+					Qué Dicen Mis Clientes
+				</h2>
+				<p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto" data-animate="fade-up">
+					Opiniones de clientes satisfechos con los que he trabajado en diferentes proyectos.
 
 				<div class="grid md:grid-cols-3 gap-8">
 					<!-- Testimonial 1 -->
@@ -307,13 +316,12 @@
 								alt="Customer 1"
 								class="w-16 h-16 rounded-full mr-4 object-cover" />
 							<div>
-								<div class="font-semibold text-gray-900 dark:text-white">John Doe</div>
-								<div class="text-sm text-gray-600 dark:text-gray-400">CEO, Company Inc.</div>
-							</div>
+							<div class="font-semibold text-gray-900 dark:text-white">Juan Martínez</div>
+							<div class="text-sm text-gray-600 dark:text-gray-400">Director, Empresa Tech</div>
 						</div>
-						<p class="text-gray-700 dark:text-gray-300 italic">
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua. Exceptional service!"
+					</div>
+					<p class="text-gray-700 dark:text-gray-300 italic">
+						"Excelente trabajo en la plataforma e-commerce. El desarrollador entendió perfectamente nuestros requerimientos y entregó a tiempo. Muy recomendado!"
 						</p>
 					</div>
 
@@ -325,13 +333,12 @@
 								alt="Customer 2"
 								class="w-16 h-16 rounded-full mr-4 object-cover" />
 							<div>
-								<div class="font-semibold text-gray-900 dark:text-white">Jane Smith</div>
-								<div class="text-sm text-gray-600 dark:text-gray-400">Designer, Creative Studio</div>
-							</div>
+							<div class="font-semibold text-gray-900 dark:text-white">María García</div>
+							<div class="text-sm text-gray-600 dark:text-gray-400">Propietaria, Agencia Creativa</div>
 						</div>
-						<p class="text-gray-700 dark:text-gray-300 italic">
-							"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. The team exceeded all our expectations.
-							Highly recommended!"
+					</div>
+					<p class="text-gray-700 dark:text-gray-300 italic">
+						"Transformó completamente nuestra presencia web. El dashboard que desarrolló es intuitivo y ha mejorado nuestra productividad un 40%. Altamente recomendado!"
 						</p>
 					</div>
 
@@ -343,13 +350,12 @@
 								alt="Customer 3"
 								class="w-16 h-16 rounded-full mr-4 object-cover" />
 							<div>
-								<div class="font-semibold text-gray-900 dark:text-white">Mike Johnson</div>
-								<div class="text-sm text-gray-600 dark:text-gray-400">Founder, Startup Co.</div>
-							</div>
+							<div class="font-semibold text-gray-900 dark:text-white">Carlos López</div>
+							<div class="text-sm text-gray-600 dark:text-gray-400">Fundador, StartUp Digital</div>
 						</div>
-						<p class="text-gray-700 dark:text-gray-300 italic">
-							"Duis aute irure dolor in reprehenderit in voluptate velit esse. Professional, reliable, and innovative. Best
-							decision we made!"
+					</div>
+					<p class="text-gray-700 dark:text-gray-300 italic">
+						"Profesional, confiable e innovador. El sistema de citas que desarrolló permitió duplicar nuestros pacientes. La mejor decisión que tomamos fue contratarlo!"
 						</p>
 					</div>
 				</div>
@@ -357,17 +363,17 @@
 		</section>
 
 		<!-- CTA Section -->
-		<section id="cta" class="py-20 lg:py-32 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+		<section id="cta" class="py-20 lg:py-32 bg-gradient-to-br from-slate-900 via-emerald-900 to-slate-900 text-white">
 			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-				<h2 class="text-4xl md:text-5xl font-bold mb-6" data-animate="fade-up">Ready to Get Started?</h2>
+				<h2 class="text-4xl md:text-5xl font-bold mb-6" data-animate="fade-up">¿Listo para Comenzar tu Proyecto?</h2>
 				<p class="text-xl text-gray-300 mb-10" data-animate="fade-up">
-					Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+					Tengo soluciones a medida para impulsar tu negocio en el entorno digital. Déjame ayudarte a alcanzar tus objetivos.
 				</p>
 				<div data-animate="fade-up">
 					<a
 						href="#/contact"
-						class="inline-block px-10 py-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-all hover:-translate-y-1 hover:shadow-xl text-lg">
-						Contact Us Today
+						class="inline-block px-10 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg transition-all hover:-translate-y-1 hover:shadow-xl text-lg">
+						Contacto
 					</a>
 				</div>
 			</div>
