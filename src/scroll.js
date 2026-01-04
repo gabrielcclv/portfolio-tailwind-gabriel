@@ -617,3 +617,54 @@ export function initNavigation() {
 	navigation.init(document);
 	console.log('🧭 Navigation menu initialized');
 }
+/**
+ * Initialize projects view toggle functionality
+ */
+export function initProjectsToggle(container = document) {
+	const gridBtn = container.getElementById ? container.getElementById('grid-view-btn') : container.querySelector('#grid-view-btn');
+	const listBtn = container.getElementById ? container.getElementById('list-view-btn') : container.querySelector('#list-view-btn');
+	const projectsGrid = container.getElementById ? container.getElementById('projects-grid') : container.querySelector('#projects-grid');
+
+	if (!gridBtn || !listBtn || !projectsGrid) {
+		return;
+	}
+
+	let isGridView = true;
+
+	const updateButtonStyles = (active, inactive) => {
+		active.classList.add('bg-white', 'dark:bg-gray-800', 'text-gray-900', 'dark:text-white', 'shadow-md');
+		active.classList.remove('text-gray-600', 'dark:text-gray-400');
+		
+		inactive.classList.remove('bg-white', 'dark:bg-gray-800', 'text-gray-900', 'dark:text-white', 'shadow-md');
+		inactive.classList.add('text-gray-600', 'dark:text-gray-400');
+	};
+
+	gridBtn.addEventListener('click', (e) => {
+		e.preventDefault();
+		if (isGridView) return;
+		isGridView = true;
+		
+		projectsGrid.className = 'grid md:grid-cols-2 lg:grid-cols-3 gap-6';
+		updateButtonStyles(gridBtn, listBtn);
+
+		container.querySelectorAll('.project-card').forEach(card => {
+			card.classList.remove('md:flex', 'gap-4', 'flex-col', 'md:flex-row');
+		});
+	});
+
+	listBtn.addEventListener('click', (e) => {
+		e.preventDefault();
+		if (!isGridView) return;
+		isGridView = false;
+		
+		projectsGrid.className = 'grid md:grid-cols-2 lg:grid-cols-2 gap-4';
+		updateButtonStyles(listBtn, gridBtn);
+
+		container.querySelectorAll('.project-card').forEach(card => {
+			card.classList.add('md:flex', 'gap-4');
+			card.classList.add('flex-col', 'md:flex-row');
+		});
+	});
+
+	console.log('🎨 Projects toggle initialized');
+}
