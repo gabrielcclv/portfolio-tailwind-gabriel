@@ -98,12 +98,12 @@
 			const mobileMenu = document.getElementById('mobile-menu');
 			const overlay = document.getElementById('menu-overlay');
 
-			if (!mobileBtn) console.error('❌ mobile-menu-btn not found');
-			if (!mobileMenu) console.error('❌ mobile-menu not found');
-			if (!overlay) console.error('❌ menu-overlay not found');
+			if (!mobileBtn) console.error('mobile-menu-btn not found');
+			if (!mobileMenu) console.error('mobile-menu not found');
+			if (!overlay) console.error('menu-overlay not found');
 
 			if (mobileBtn && mobileMenu && overlay) {
-				console.log('✅ All menu elements found');
+				console.log('All menu elements found');
 
 				// Toggle menu function
 				function toggleMenu() {
@@ -114,18 +114,18 @@
 						mobileMenu.classList.remove('hidden');
 						overlay.classList.remove('hidden');
 						mobileBtn.setAttribute('aria-expanded', 'true');
-						console.log('✅ Menu opened');
+						console.log('Menu opened');
 					} else {
 						mobileMenu.classList.add('hidden');
 						overlay.classList.add('hidden');
 						mobileBtn.setAttribute('aria-expanded', 'false');
-						console.log('✅ Menu closed');
+						console.log('Menu closed');
 					}
 				}
 
 				// Button click handler
 				mobileBtn.addEventListener('click', function(e) {
-					console.log('🖱️ Button clicked');
+					console.log('Button clicked');
 					e.preventDefault();
 					e.stopImmediatePropagation();
 					toggleMenu();
@@ -133,7 +133,7 @@
 
 				// Overlay click to close
 				overlay.addEventListener('click', function(e) {
-					console.log('🖱️ Overlay clicked');
+					console.log('Overlay clicked');
 					e.preventDefault();
 					e.stopImmediatePropagation();
 					mobileMenu.classList.add('hidden');
@@ -144,7 +144,7 @@
 				// Close menu when clicking links
 				mobileMenu.addEventListener('click', function(e) {
 					if (e.target.closest('a[href^="#/"]')) {
-						console.log('🔗 Router link clicked, closing menu');
+						console.log('Router link clicked, closing menu');
 						mobileMenu.classList.add('hidden');
 						overlay.classList.add('hidden');
 						mobileBtn.setAttribute('aria-expanded', 'false');
@@ -161,7 +161,7 @@
 					}
 				}, { capture: false, once: false });
 
-				console.log('📱 Mobile menu handlers registered');
+				console.log('Mobile menu handlers registered');
 			}
 		</script>
 	</body>

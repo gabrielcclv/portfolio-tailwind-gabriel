@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [tailwindcss()],
-	base: process.env.NODE_ENV === 'production' ? '/portafolio-tailwind-gabriel/' : '/',
+	base: process.env.NODE_ENV === 'production' ? '/portfolio-tailwind-gabriel/' : '/',
 	build: {
 		outDir: 'dist',
 		assetsDir: 'assets',
