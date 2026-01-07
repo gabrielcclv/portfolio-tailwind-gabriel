@@ -49,3 +49,6 @@ document.addEventListener('click', (e) => {
 		}
 	}
 });
+
+// Mobile menu is initialized in scroll.js via initNavigation()
+// This comment ensures developers know where the mobile menu logic lives
