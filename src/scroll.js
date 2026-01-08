@@ -672,3 +672,52 @@ export function initProjectsToggle(container = document) {
 
 	console.log('🎨 Alternancia de proyectos inicializada');
 }
+
+export function initProjectFilters(container = document) {
+    // 1. Seleccionar elementos
+    const buttons = container.querySelectorAll('.filter-btn');
+    const projects = container.querySelectorAll('.project-card');
+
+    if (!buttons.length || !projects.length) return;
+
+    // 2. Función para manejar el clic
+    const handleFilter = (e) => {
+        const btn = e.target;
+        const filter = btn.dataset.filter;
+
+        // Actualizar estilos de botones
+        buttons.forEach(b => {
+            // Quitar estilos activos
+            b.classList.remove('bg-background', 'shadow-sm', 'text-foreground');
+            b.classList.add('text-muted-foreground', 'hover:text-foreground');
+        });
+        // Poner estilos activos al botón clickeado
+        btn.classList.add('bg-background', 'shadow-sm', 'text-foreground');
+        btn.classList.remove('text-muted-foreground', 'hover:text-foreground');
+
+        // Filtrar proyectos
+        projects.forEach(card => {
+            const categories = card.dataset.category || '';
+            
+            // Si es 'all' o la tarjeta incluye la categoría
+            if (filter === 'all' || categories.includes(filter)) {
+                card.style.display = 'flex';
+                // Pequeña animación de entrada
+                gsap.fromTo(card, 
+                    { opacity: 0, y: 20 }, 
+                    { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out', clearProps: 'all' }
+                );
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // Refrescar ScrollTrigger porque la altura de la página cambió
+        ScrollTrigger.refresh();
+    };
+
+    // 3. Añadir Event Listeners
+    buttons.forEach(btn => btn.addEventListener('click', handleFilter));
+
+    console.log('Filtros de proyectos inicializados');
+}
