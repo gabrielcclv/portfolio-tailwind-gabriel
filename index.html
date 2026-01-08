@@ -6,6 +6,8 @@
 		<title>Gabriel Calvo  | Portfolio Template 2026</title>
 		<meta name="description" content="Plantilla de portfolio profesional construida con Tailwind CSS y Vite.">
 
+		<link rel="icon" type="image/png" href="https://github.com/gabrielcclv.png">
+		
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="Gabriel Calvo - Portfolio">
 		<meta property="og:description" content="Explora mis proyectos y habilidades en esta plantilla de alto rendimiento.">
@@ -32,7 +34,18 @@
 			<div class="max-w-7xl mx-auto px-4">
 				<div class="flex justify-between items-center h-16">
 					<!-- Logo -->
-					<a href="#/" class="text-xl font-semibold hover:opacity-70 transition-opacity" aria-label="Inicio">Portfolio</a>
+					<a href="#/" class="flex items-center gap-3 hover:opacity-80 transition-opacity group" aria-label="Inicio">
+    					<div class="relative w-10 h-10 overflow-hidden rounded-full border-2 border-primary/20 group-hover:border-primary transition-colors">
+        					<img 
+								src="https://github.com/gabrielcclv.png" 
+								alt="Foto de perfil de Gabriel Calvo" 
+								class="object-cover w-full h-full" 
+							/>
+						</div>
+						<span class="text-lg md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 group-hover:from-primary group-hover:to-primary/70 transition-all">
+							Gabriel Calvo
+						</span>
+					</a>
 
 					<!-- Right side: Theme toggle + Menu button -->
 					<div class="flex items-center gap-3">
